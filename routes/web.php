@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\BillingController;
 use App\Http\Controllers\PaketController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +25,5 @@ Route::get('/', function () {
 Route::get('/users', [UserController::class, 'index'])->name('user.index');
 Route::get('/paket', [PaketController::class, 'index'])->name('paket.index');
 Route::get('/billing', [BillingController::class, 'index'])->name('billing.index');
-Route::get('/payment', [paymentController::class, 'index'])->name('payment.index');
+Route::get('/payment', [PaymentController::class, 'index'])->name('payment.index');
+Route::get('/subscription', [SubscriptionController::class, 'index'])->name('subscriptions.index');

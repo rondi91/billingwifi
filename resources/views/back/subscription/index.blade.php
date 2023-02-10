@@ -15,18 +15,20 @@
                             <thead>
                                 <tr>
                                     <th>no</th>
-                                    <th>Nama</th>
-                                    <th>email</th>
-                                    <th>alamat</th>
+                                    <th>Users_ID</th>
+                                    <th>Pakets_ID </th>
+                                    <th>Mulai_Berlangganan</th>
+                                    <th>Akhir_Berlangganan</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($users as $user )
+                                @foreach ($subscriptions as $subscription )
                                     
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $user->Nama }}</td>
-                                    <td>{{ $user->Email }}</td>
-                                    <td>{{ $user->Alamat }}</td>
+                                    <td>{{ $subscription->Users_ID }}</td>
+                                    <td>{{ $subscription->Pakets_ID }}</td>
+                                    <td>{{ $subscription->Mulai_Berlangganan }}</td>
+                                    <td>{{ $subscription->Akhir_Berlangganan }}</td>
                                 </tr>
                                 @endforeach
                                 

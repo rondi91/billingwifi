@@ -15,18 +15,18 @@
                             <thead>
                                 <tr>
                                     <th>no</th>
-                                    <th>Nama</th>
-                                    <th>email</th>
-                                    <th>alamat</th>
+                                    <th>Billings_ID</th>
+                                    <th>Tanggal_Pembayaran </th>
+                                    <th>Jumlah_Pembayaran</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($users as $user )
+                                @foreach ($payments as $payment )
                                     
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $user->Nama }}</td>
-                                    <td>{{ $user->Email }}</td>
-                                    <td>{{ $user->Alamat }}</td>
+                                    <td>{{ $payment->Billings_ID }}</td>
+                                    <td>{{ $payment->Tanggal_Pembayaran }}</td>
+                                    <td>{{ $payment->Jumlah_Pembayaran }}</td>
                                 </tr>
                                 @endforeach
                                 

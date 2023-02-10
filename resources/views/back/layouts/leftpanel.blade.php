@@ -20,7 +20,7 @@
                     <a href="/payment"> <i class="menu-icon ti-email"></i>Payment </a>
                 </li>
                 <li>
-                    <a href="/Subscription"> <i class="menu-icon ti-email"></i>Subscription </a>
+                    <a href="/subscription"> <i class="menu-icon ti-email"></i>Subscription </a>
                 </li>
                
            
