@@ -8,7 +8,19 @@
                 <li class="menu-title">UI elements</li><!-- /.menu-title -->
                 
                 <li>
-                    <a href="widgets.html"> <i class="menu-icon ti-email"></i>User </a>
+                    <a href="/users"> <i class="menu-icon ti-email"></i>User </a>
+                </li>
+                <li>
+                    <a href="/paket"> <i class="menu-icon ti-email"></i>Paket </a>
+                </li>
+                <li>
+                    <a href="/billing"> <i class="menu-icon ti-email"></i>Billing </a>
+                </li>
+                <li>
+                    <a href="/payment"> <i class="menu-icon ti-email"></i>Payment </a>
+                </li>
+                <li>
+                    <a href="/Subscription"> <i class="menu-icon ti-email"></i>Subscription </a>
                 </li>
                
            
