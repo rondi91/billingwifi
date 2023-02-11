@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class paket extends Model
 {
     use HasFactory;
+
+   
 }

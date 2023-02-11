@@ -15,8 +15,8 @@
                             <thead>
                                 <tr>
                                     <th>no</th>
-                                    <th>Users_ID</th>
-                                    <th>Pakets_ID </th>
+                                    <th>username</th>
+                                    <th>Kecepatan </th>
                                     <th>Mulai_Berlangganan</th>
                                     <th>Akhir_Berlangganan</th>
                                 </tr>
@@ -25,8 +25,8 @@
                                 @foreach ($subscriptions as $subscription )
                                     
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $subscription->Users_ID }}</td>
-                                    <td>{{ $subscription->Pakets_ID }}</td>
+                                    <td>{{ $subscription->user->Nama }}</td>
+                                    <td>{{ $subscription->paket->Kecepatan }}</td>
                                     <td>{{ $subscription->Mulai_Berlangganan }}</td>
                                     <td>{{ $subscription->Akhir_Berlangganan }}</td>
                                 </tr>

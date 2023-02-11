@@ -18,6 +18,7 @@
                                     <th>Nama</th>
                                     <th>email</th>
                                     <th>alamat</th>
+                                    <th>Paket kecepatan</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -27,6 +28,7 @@
                                     <td>{{ $user->Nama }}</td>
                                     <td>{{ $user->Email }}</td>
                                     <td>{{ $user->Alamat }}</td>
+                                    <td>{{ $user->subscription->Mulai_Berlangganan }}</td>
                                 </tr>
                                 @endforeach
                                 

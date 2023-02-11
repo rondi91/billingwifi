@@ -22,9 +22,9 @@
                             </thead>
                             <tbody>
                                 @foreach ($billings as $billing )
-                                    
+                                    {{-- {{ dd( __FILE__,__LINE__, $billings) }} --}}
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $billing->Subscriptions_ID }}</td>
+                                    <td>{{ $billing->payment->Jumlah_Pembayaran }}</td>
                                     <td>{{ $billing->Tanggal_Tagihan }}</td>
                                     <td>{{ $billing->Status_Pembayaran }}</td>
                                 </tr>

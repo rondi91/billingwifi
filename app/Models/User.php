@@ -41,4 +41,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function paket()
+    {
+        // 1 to 1 ,1 post punya 1 kategory 
+        return $this->belongsTo(paket::class);
+    }
+    public function subscription()
+    {
+        // 1 to 1 ,1 post punya 1 kategory 
+        return $this->hasMany(subscription::class);
+    }
 }

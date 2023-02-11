@@ -24,7 +24,7 @@
                                 @foreach ($payments as $payment )
                                     
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $payment->Billings_ID }}</td>
+                                    <td>{{ $payment->billing->Status_Pembayaran }}</td>
                                     <td>{{ $payment->Tanggal_Pembayaran }}</td>
                                     <td>{{ $payment->Jumlah_Pembayaran }}</td>
                                 </tr>
